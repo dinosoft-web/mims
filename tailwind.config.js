@@ -10,7 +10,8 @@ module.exports = {
 		},
 		extend: {
 			colors: {
-				softBlue: '#3662F7',
+				softBlue: 'rgba(54, 98, 247, 0.10)',
+				darkBlue: '#3662F7',
 				softRed: '#940CAB',
 				grayishBlue: 'hsl(229, 8%, 60%)',
 				veryDarkBlue: '#2E4AAB',

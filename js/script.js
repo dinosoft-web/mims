@@ -14,7 +14,7 @@ function onTabClick(e) {
 	// Deactivate all tabs
 	tabs.forEach((tab) => {
 		tab.children[0].classList.remove(
-			'border-softRed',
+			'border-darkBlue',
 			'border-b-4',
 			'md:border-b-0'
 		)
@@ -24,7 +24,7 @@ function onTabClick(e) {
 	panels.forEach((panel) => panel.classList.add('hidden'))
 
 	// Activate a new tab and panel based on the target
-	e.target.classList.add('border-softRed', 'border-b-4')
+	e.target.classList.add('border-darkBlue', 'border-b-4')
 	const classString = e.target.getAttribute('data-target')
 	document
 		.getElementById('panels')
@@ -38,8 +38,8 @@ function navToggle() {
 	menu.classList.toggle('hidden')
 
 	if (menu.classList.contains('flex')) {
-		logo.setAttribute('src', './images/logo-bookmark-footer.svg')
+		logo.setAttribute('src', './images/logo.png')
 	} else {
-		logo.setAttribute('src', './images/logo-bookmark.svg')
+		logo.setAttribute('src', './images/logo.png')
 	}
 }
